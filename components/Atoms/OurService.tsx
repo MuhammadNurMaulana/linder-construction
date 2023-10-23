@@ -12,7 +12,7 @@ export default function OurService({ src, alt, title }: OurServiceProps) {
     <div className="flex gap-4">
       <Image src={src} width={400} height={400} alt={alt} className="w-[70px] h-[70px]" />
       <div>
-        <h4 className="text-xl font-semibold">{title}</h4>
+        <h2 className="text-xl font-semibold">{title}</h2>
         <p className="text-xs font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
       </div>
     </div>

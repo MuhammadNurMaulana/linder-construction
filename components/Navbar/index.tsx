@@ -6,6 +6,41 @@ import { PiShoppingCartFill } from "react-icons/pi";
 export default function Navbar() {
   const [openMenu, setOpenMenu] = React.useState(false);
 
+  const navMenu = [
+    {
+      href: "/projects",
+      title: "Project",
+    },
+    {
+      href: "/blog",
+      title: "Blog",
+    },
+    {
+      href: "/portofolio",
+      title: "Portofolio",
+    },
+    {
+      href: "/service",
+      title: "Service",
+    },
+    {
+      href: "/services",
+      title: "Services",
+    },
+    {
+      href: "/contact",
+      title: "Contact",
+    },
+    {
+      href: "/about",
+      title: "About",
+    },
+    {
+      href: "/home",
+      title: "Home",
+    },
+  ];
+
   const toggleHandle = () => {
     setOpenMenu(!openMenu);
   };
@@ -14,14 +49,12 @@ export default function Navbar() {
       <h1 className="font-semibold text-xl">Linder Constructor Company</h1>
 
       <div className={` items-center gap-4 font-semibold text-lg lg:flex ${openMenu ? "absolute top-full right-0 flex flex-col py-8 gap-8 left-0 h-screen bg-white" : "hidden"}`}>
-        <Link href={"/projects"}>Project</Link>
-        <Link href={"/"}>Blog</Link>
-        <Link href={"/"}>Portofolio</Link>
-        <Link href={"/"}>Service</Link>
-        <Link href={"/"}>Services</Link>
-        <Link href={"/"}>Contact</Link>
-        <Link href={"/"}>About</Link>
-        <Link href={"/"}>Home</Link>
+        {navMenu.map((nav, index) => (
+          <Link href={nav.href} key={index}>
+            {nav.title}
+          </Link>
+        ))}
+
         <div className="cursor-pointer">
           <PiShoppingCartFill />
         </div>

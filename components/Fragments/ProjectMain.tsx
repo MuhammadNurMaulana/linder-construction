@@ -6,7 +6,7 @@ interface Project {
   alt: string;
 }
 
-export default function ProjectHome({ src, alt }: Project) {
+export default function ProjectMain({ src, alt }: Project) {
   return (
     <div>
       <Image src={src} alt={alt} width={600} height={600} className="rounded-lg h-72 object-cover" />

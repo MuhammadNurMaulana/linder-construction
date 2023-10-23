@@ -9,9 +9,9 @@ export default function ProjectProject() {
 
       <div className="w-4/5 mx-auto mt-12 mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ProjectMain src={"/images/project1.jpg"} alt="image of project 1" />
-          <ProjectMain src={"/images/project2.jpg"} alt="image of project 2" />
-          <ProjectMain src={"/images/project3.jpg"} alt="image of project 3" />
+          <ProjectMain src={"/images/project4.jpg"} alt="image of project 4" />
+          <ProjectMain src={"/images/project5.jpg"} alt="image of project 5" />
+          <ProjectMain src={"/images/project6.jpg"} alt="image of project 6" />
         </div>
       </div>
 

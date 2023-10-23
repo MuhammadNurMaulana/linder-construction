@@ -62,7 +62,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <button className="flex flex-col gap-[5px] lg:hidden" onClick={() => toggleHandle()}>
+      <button className="flex flex-col gap-[5px] lg:hidden" aria-label={openMenu ? "Close Menu" : "Open Menu"} aria-expanded={openMenu} tabIndex={0} onClick={() => toggleHandle()}>
         <span className={`w-6 h-[3px] bg-black block transition-all duration-300 ${openMenu ? "rotate-45 translate-y-[8px]" : ""}`} />
         <span className={`w-6 h-[3px] bg-black block transition-all duration-300 ${openMenu ? "opacity-0" : ""}`} />
         <span className={`w-6 h-[3px] bg-black block transition-all duration-300 ${openMenu ? "-rotate-45 -translate-y-[8px]" : ""}`} />

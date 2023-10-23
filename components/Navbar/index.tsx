@@ -46,7 +46,9 @@ export default function Navbar() {
   };
   return (
     <nav className="flex bg-white items-center justify-between py-8 px-4 fixed top-0 left-0 right-0 z-20">
-      <h1 className="font-semibold text-xl">Linder Constructor Company</h1>
+      <Link href={"/"} className="font-semibold text-xl">
+        Linder Constructor Company
+      </Link>
 
       <div className={` items-center gap-4 font-semibold text-lg lg:flex ${openMenu ? "absolute top-full right-0 flex flex-col py-8 gap-8 left-0 h-screen bg-white" : "hidden"}`}>
         {navMenu.map((nav, index) => (

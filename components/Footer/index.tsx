@@ -7,13 +7,13 @@ export default function Footer() {
     <footer className="bg-slate-800 text-white p-6 flex gap-8 flex-col md:flex-row justify-center items-center">
       <h1>Powered by &copy; Muhammad Nur Maulana 2023 </h1>
       <div className="flex items-center gap-8 text-xl">
-        <Link href={"/"}>
+        <Link href={"https://github.com/MuhammadNurMaulana"} target="_blank">
           <FaGithub />
         </Link>
-        <Link href={"/"}>
+        <Link href={"https://wa.me/+6283137446693"} target="_blank">
           <FaWhatsapp />
         </Link>
-        <Link href={"/"}>
+        <Link href={"https://www.instagram.com/ctizz4/"}>
           <FaInstagram />
         </Link>
       </div>

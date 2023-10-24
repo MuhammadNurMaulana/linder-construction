@@ -14,7 +14,7 @@ export default async function BlogPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.data.length > 0 &&
             blogs.data.map((blog: any) => (
-              <div key={blog.id} className="bg-slate-200 relative pb-12 bg-[#F7F7F7] rounded">
+              <div key={blog.id} className="relative pb-12 bg-[#F7F7F7] rounded">
                 <Image src={blog.img} width={350} height={350} alt={blog.desc} className="w-full rounded h-[35vh] " />
 
                 <div className="p-4">

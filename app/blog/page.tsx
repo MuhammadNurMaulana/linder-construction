@@ -19,9 +19,9 @@ export default async function BlogPage() {
 
                 <div className="p-4">
                   <p className="text-xs text-slate-400 font-semibold mb-2">{blog.date}</p>
-                  <h2 className="line-clamp-5">{blog.desc}</h2>
+                  <h2 className="line-clamp-5 mb-3">{blog.desc}</h2>
 
-                  <Link href={`/blog/detail/${blog.id}`} aria-label={blog.desc} className="absolute bottom-4 left-4 border-2 border-slate-800 hover:border-slate-900 py-2 px-4 rounded">
+                  <Link href={`/blog/detail/${blog.id}`} aria-hidden="true" className="absolute bottom-4 left-4 border-2 border-slate-800 hover:border-slate-900 py-2 px-4 rounded">
                     Read More...
                   </Link>
                 </div>

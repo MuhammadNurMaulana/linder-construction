@@ -2,6 +2,7 @@ import Image from "next/image";
 import { IoArrowBackCircleSharp } from "react-icons/io5";
 import React from "react";
 import Link from "next/link";
+import { getData } from "@/services/blog";
 
 interface Props {
   params: {
@@ -10,17 +11,7 @@ interface Props {
 }
 
 export default async function BlogsDetail({ params }: Props) {
-  async function getData() {
-    const res = await fetch(`${process.env.API_KEY_URL}/api/blogs/?id=${params.id}`);
-
-    if (!res.ok) {
-      throw new Error("Failed to data fetch");
-    }
-
-    return res.json();
-  }
-
-  const blog = await getData();
+  const blog = await getData(`${process.env.API_KEY_URL}/api/blogs/?id=${params.id}`);
   return (
     <div className="mt-28 mb-12">
       <div className="flex ml-8 items-center gap-6 group mb-8">
@@ -32,7 +23,7 @@ export default async function BlogsDetail({ params }: Props) {
       <div className="w-4/5 mx-auto text-justify">
         <h2 className="text-xl font-semibold pb-8 border-b-2 border-slate-800">{blog.data.desc}</h2>
         <p className="text-xs font-semibold text-slate-500 pb-8 pt-2 ">{blog.data.date}</p>
-        <Image src={blog.data.img} alt={blog.data.desc} width={2000} height={300} className="w-full h-[50vh] object-cover object-center rounded" />
+        <Image src={blog.data.img} alt={blog.data.desc} width={2000} height={300} className="w-full h-[35vh] object-cover object-center rounded" />
         <div className="mt-8 flex flex-col justify-center gap-8">
           <p>{blog.data.p1}</p>
           <p>{blog.data.p2}</p>
@@ -40,7 +31,6 @@ export default async function BlogsDetail({ params }: Props) {
           <p>{blog.data.p4}</p>
         </div>
       </div>
-         
     </div>
   );
 }

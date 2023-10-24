@@ -1,9 +1,6 @@
-export const getData = async (url: string) => {
+export async function getData(url: string) {
   const res = await fetch(url, {
-    cache: "force-cache",
-    next: {
-      revalidate: 60,
-    },
+    cache: "no-store",
   });
 
   if (!res.ok) {
@@ -11,4 +8,4 @@ export const getData = async (url: string) => {
   }
 
   return res.json();
-};
+}

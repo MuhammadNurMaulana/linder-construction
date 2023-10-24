@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 async function getData() {
-  const res = await fetch(`${process.env.API_KEY_URL}/api/blogs`);
+  const res = await fetch(`https://linder-construction.vercel.app/api/blogs`);
 
   if (!res.ok) {
     throw new Error("Failed to data fetch");

@@ -10,8 +10,8 @@ export default async function BlogPage() {
     <>
       <BlogHeader />
 
-      <section className="my-12">
-        <div className="bg-[#F7F7F7] w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="bg-[#F7F7F7] my-12">
+        <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.data.length > 0 &&
             blogs.data.map((blog: any) => (
               <div key={blog.id} className="relative pb-12 bg-white rounded">

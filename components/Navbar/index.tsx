@@ -16,27 +16,27 @@ export default function Navbar() {
       title: "Blog",
     },
     {
-      href: "/portofolio",
+      href: "/",
       title: "Portofolio",
     },
     {
-      href: "/service",
+      href: "/",
       title: "Service",
     },
     {
-      href: "/services",
+      href: "/",
       title: "Services",
     },
     {
-      href: "/contact",
+      href: "/",
       title: "Contact",
     },
     {
-      href: "/about",
+      href: "/",
       title: "About",
     },
     {
-      href: "/home",
+      href: "/",
       title: "Home",
     },
   ];

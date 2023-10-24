@@ -2,9 +2,9 @@ import React from "react";
 
 interface HeaderProps {
   title: string;
-  paragraph: string;
+  paragraph?: string;
   button?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   bgImage?: string;
   btnCls?: string;
 }

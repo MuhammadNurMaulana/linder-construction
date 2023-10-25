@@ -20,7 +20,7 @@ export default async function PortfolioPage() {
               <div key={project.id} className="pb-12 bg-white rounded">
                 <Image src={project.img} width={350} height={350} alt={project.alt} className="w-full rounded h-[25vh]" />
 
-                <div className="p-4 border border-slate-800 rounded flex flex-col gap-4">
+                <div className="p-4 border border-slate-800 rounded flex flex-col gap-4 mt-4">
                   <div className="h-48 lg:h-40">
                     <h1 className="text-lg font-semibold">Service Title</h1>
                     <p className="text-sm text-slate-700 line-clamp-5">{project.desc}</p>

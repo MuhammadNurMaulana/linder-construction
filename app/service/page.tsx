@@ -39,7 +39,7 @@ export default function ServicePage() {
           </BuildLeft>
 
           <div className="w-full lg:w-2/3">
-            <Image width={1080} height={1080} src={"/images/building.jpg"} alt="constructor building" className="h-[400px] object-cover" />
+            <Image width={1080} height={1080} src={"/images/building.jpg"} alt="constructor building" className=" object-cover" />
             <div className="flex flex-col md:flex-row md:items-center">
               <div className="py-8 text-center w-full md:w-1/2 bg-yellow-500 text-slate-900">
                 <h1>Call for a Quote</h1>

@@ -18,7 +18,7 @@ export default async function PortfolioPage() {
           {projects.data.length > 0 &&
             projects.data.map((project: { id: number; desc: string; img: string; alt: string }) => (
               <div key={project.id} className="pb-12 bg-white rounded">
-                <Image src={project.img} width={350} height={350} alt={project.alt} className="w-full rounded h-[25vh]" />
+                <Image src={project.img} width={600} height={600} alt={project.alt} className="rounded h-[30vh]" />
 
                 <div className="p-4 border border-slate-800 rounded flex flex-col gap-4 mt-4">
                   <div className="h-48 lg:h-40">

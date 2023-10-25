@@ -13,12 +13,12 @@ export default async function PortfolioPage() {
         <PortfolioHeader />
       </section>
 
-      <section className="bg-[#F7F7F7] my-12">
+      <section className="my-12">
         <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.data.length > 0 &&
             projects.data.map((project: { id: number; desc: string; img: string; alt: string }) => (
-              <div key={project.id} className="pb-12 bg-white rounded">
-                <Image src={project.img} width={600} height={600} alt={project.alt} className="rounded h-[30vh]" />
+              <div key={project.id} className="pb-12 rounded">
+                <Image src={project.img} width={640} height={426} alt={project.alt} className="rounded h-[30vh]" />
 
                 <div className="p-4 border border-slate-800 rounded flex flex-col gap-4 mt-4">
                   <div className="h-48 lg:h-40">

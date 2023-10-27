@@ -20,7 +20,7 @@ export default async function PortfolioProject() {
                   <p className="text-sm text-slate-700 line-clamp-5">{project.desc}</p>
                 </div>
 
-                <Link href={`/portfolio/projects/${project.id}`} aria-description={project.alt} aria-label={project.alt} className="border border-slate-800 hover:border-slate-900 py-2 px-4 rounded text-center">
+                <Link href={`/portfolio/projects/${project.id}`} className="border border-slate-800 hover:border-slate-900 py-2 px-4 rounded text-center">
                   LEARN MORE
                 </Link>
               </div>

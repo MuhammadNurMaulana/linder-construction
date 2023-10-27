@@ -52,9 +52,9 @@ export default function Navbar() {
 
       <div className={` items-center gap-4 font-semibold text-lg lg:flex ${openMenu ? "absolute top-full right-0 flex flex-col py-8 gap-8 left-0 h-screen bg-white" : "hidden"}`}>
         {navMenu.map((nav, index) => (
-          <Link href={nav.href} key={index}>
+          <a href={nav.href} key={index}>
             {nav.title}
-          </Link>
+          </a>
         ))}
 
         <div className="cursor-pointer">

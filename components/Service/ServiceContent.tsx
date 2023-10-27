@@ -1,15 +1,22 @@
-import Image from "next/image";
 import React from "react";
 import BuildLeft from "../Atoms/BuildLeft";
+import Image from "next/image";
 
-export default function MainContent() {
+export default function ServiceContent() {
   return (
     <section>
       <div className="flex flex-col lg:flex-row">
-        <BuildLeft title="We,ve Been Building For Over 10 Years" button="ABOUT US" bgAndTextColor="text-white bg-black lg:w-1/3" />
+        <BuildLeft title="About Process" bgAndTextColor="text-white bg-black lg:w-1/3" btnCls="hidden">
+          <p> - Lorem, ipsum dolor</p>
+          <p> - Lorem ipsum dolor sit amet</p>
+          <p> - Lorem, ipsum</p>
+          <p> - Lorem ipsum dolor sit</p>
+          <p> - Lorem, ipsum</p>
+          <p> - Lorem ipsum dolor sit</p>
+        </BuildLeft>
 
         <div className="w-full lg:w-2/3">
-          <Image width={800} height={800} src={"/images/building.jpg"} alt="constructor building" className="h-[400px] object-cover w-full" />
+          <Image width={800} height={800} src={"/images/building.jpg"} alt="constructor building" className="w-full object-cover object-top" />
           <div className="flex flex-col md:flex-row md:items-center">
             <div className="py-8 text-center w-full md:w-1/2 bg-yellow-500 text-slate-900">
               <h1>Call for a Quote</h1>

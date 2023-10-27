@@ -11,7 +11,7 @@ export default async function BlogBlog() {
         {blogs.data.length > 0 &&
           blogs.data.map((blog: { id: number; desc: string; img: string; date: string }) => (
             <div key={blog.id} className="relative pb-12 bg-white rounded">
-              <Image src={blog.img} width={350} height={350} alt={blog.desc} className="w-full rounded h-[35vh] " />
+              <Image src={blog.img} width={600} height={600} alt={blog.desc} className="w-full rounded h-[35vh] " />
 
               <div className="p-4">
                 <p className="text-xs text-slate-400 font-semibold mb-2">{blog.date}</p>

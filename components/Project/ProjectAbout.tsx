@@ -12,7 +12,7 @@ export default function ProjectAbout() {
         <p> - Lorem, ipsum</p>
       </BuildLeft>
 
-      <Image src={"/images/component6.jpg"} alt="project" width={1080} height={500} quality={100} className="rounded mx-auto object-cover w-full lg:w-1/2" />
+      <Image src={"/images/component6.jpg"} alt="project" width={800} height={800} className="rounded mx-auto object-cover w-full lg:w-1/2" />
     </section>
   );
 }

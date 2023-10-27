@@ -1,15 +1,23 @@
-import WhatWeDoHeader from "@/components/Atoms/WhatWeDoHeader";
-import HeaderTwoPage from "@/components/Fragments/HeaderTwoPage";
+import Quote from "@/components/Atoms/Quote";
+import ServicesContent from "@/components/Services/ServicesContent";
+import ServicesHeader from "@/components/Services/ServicesHeader";
+import ServicesProject from "@/components/Services/ServicesProject";
 import React from "react";
 
 export default function ServicesPage() {
   return (
     <>
-      <section className="bg-home3 pb-8">
-        <HeaderTwoPage title="Our Construction Service" paragraph="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolores cupiditate facilis ut maxime adipisci consectetur quasi." button="GET A FREE QUOTE">
-          <WhatWeDoHeader />
-        </HeaderTwoPage>
-      </section>
+      <ServicesHeader />
+
+      <Quote />
+
+      <ServicesContent title="Building Construction" />
+
+      <ServicesContent title="Repairs & Installations" />
+
+      <ServicesContent title="Custom Design Projects" />
+
+      <ServicesProject />
     </>
   );
 }

@@ -9,7 +9,7 @@ export const MainNoProject = () => {
 
       <section>
         <div className="flex flex-col lg:flex-row w-full">
-          <Image src={"/images/component4.jpg"} alt="construction" width={1080} height={500} quality={100} className="rounded mx-auto lg:mx-0 object-cover w-4/5 h-[200px] lg:h-auto lg:w-1/3" />
+          <Image src={"/images/component4.jpg"} alt="construction" width={400} height={400} className="rounded mx-auto lg:mx-0 object-cover w-4/5 h-[200px] lg:h-auto lg:w-1/3" />
 
           <div className="flex flex-col justify-between lg:w-2/3 bg-[#F7F7F7]">
             <div className="p-12">

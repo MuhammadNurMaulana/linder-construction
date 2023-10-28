@@ -24,17 +24,17 @@ export default function WhatWeDoHeader({ clsTitle }: Props) {
 
 const weDo = [
   {
-    src: "/images/wedo1.png",
+    src: "/images/wedo1.ico",
     name: "Building Construction",
     alt: "constructiom",
   },
   {
-    src: "/images/wedo3.png",
+    src: "/images/wedo3.ico",
     name: "Building Repairs",
     alt: "repairs",
   },
   {
-    src: "/images/wedo2.png",
+    src: "/images/wedo2.ico",
     name: "Custom Design",
     alt: "design",
   },

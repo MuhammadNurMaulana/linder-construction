@@ -1,45 +1,11 @@
 "use client";
+
 import Link from "next/link";
 import React from "react";
 import { PiShoppingCartFill } from "react-icons/pi";
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = React.useState(false);
-
-  const navMenu = [
-    {
-      href: "/projects",
-      title: "Project",
-    },
-    {
-      href: "/blog",
-      title: "Blog",
-    },
-    {
-      href: "/portfolio",
-      title: "Portofolio",
-    },
-    {
-      href: "/service",
-      title: "Service",
-    },
-    {
-      href: "/services",
-      title: "Services",
-    },
-    {
-      href: "/contact",
-      title: "Contact",
-    },
-    {
-      href: "/about",
-      title: "About",
-    },
-    {
-      href: "/home",
-      title: "Home",
-    },
-  ];
 
   const toggleHandle = () => {
     setOpenMenu(!openMenu);
@@ -52,9 +18,9 @@ export default function Navbar() {
 
       <div className={` items-center gap-4 font-semibold text-lg lg:flex ${openMenu ? "absolute top-full right-0 flex flex-col py-8 gap-8 left-0 h-screen bg-white" : "hidden"}`}>
         {navMenu.map((nav, index) => (
-          <a href={nav.href} key={index}>
+          <Link href={nav.href} key={index}>
             {nav.title}
-          </a>
+          </Link>
         ))}
 
         <div className="cursor-pointer">
@@ -70,3 +36,38 @@ export default function Navbar() {
     </nav>
   );
 }
+
+const navMenu = [
+  {
+    href: "/projects",
+    title: "Project",
+  },
+  {
+    href: "/blog",
+    title: "Blog",
+  },
+  {
+    href: "/portfolio",
+    title: "Portofolio",
+  },
+  {
+    href: "/service",
+    title: "Service",
+  },
+  {
+    href: "/services",
+    title: "Services",
+  },
+  {
+    href: "/contact",
+    title: "Contact",
+  },
+  {
+    href: "/about",
+    title: "About",
+  },
+  {
+    href: "/home",
+    title: "Home",
+  },
+];

@@ -1,17 +1,18 @@
-import HeaderTwoPage from "@/components/Fragments/HeaderTwoPage";
+import HeaderHome from "@/components/Home/Header";
+import HomeContent from "@/components/Home/HomeContent";
+import MainTestimonial from "@/components/Main/MainTestimonial";
 import React from "react";
 
 export default function HomePage() {
   return (
     <>
-      <section>
-        <HeaderTwoPage
-          title="Our Construction Service"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolores cupiditate facilis ut maxime adipisci consectetur quasi."
-          button="GET A FREE QUOTE"
-          bgImage="bg-home9"
-        />
-      </section>
+      <HeaderHome title="Construction Inc" bgImage="bg-home9" btnName="VIEW OUR HOME" />
+
+      <HomeContent />
+
+      <HeaderHome title="We`ve Been Building For Over 20 Years" bgImage="bg-home8" btnName="About Us" />
+
+      <MainTestimonial />
     </>
   );
 }

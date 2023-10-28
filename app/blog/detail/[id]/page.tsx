@@ -23,7 +23,7 @@ export default async function BlogsDetail({ params }: Props) {
       <div className="w-4/5 mx-auto text-justify">
         <h2 className="text-xl font-semibold pb-8 border-b-2 border-slate-800">{blog.data.desc}</h2>
         <p className="text-xs font-semibold text-slate-500 pb-8 pt-2 ">{blog.data.date}</p>
-        <Image src={blog.data.img} alt={blog.data.desc} width={2000} height={300} className="w-full h-[35vh] object-cover object-center rounded" />
+        <Image src={blog.data.img} alt={blog.data.desc} width={1080} height={1080} className="w-full h-[35vh] object-cover object-center rounded" priority={true} />
         <div className="mt-8 flex flex-col justify-center gap-8">
           <p>{blog.data.p1}</p>
           <p>{blog.data.p2}</p>

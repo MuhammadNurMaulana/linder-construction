@@ -23,7 +23,7 @@ export default async function DetailPortofolioPage({ params }: Props) {
       <div className="w-4/5 mx-auto text-justify">
         <h1 className="text-xl font-semibold pb-8 border-b-2 border-slate-800">Service Title</h1>
         <p className="text-xs font-semibold text-slate-500 pb-8 pt-2 ">{project.data.desc}</p>
-        <Image src={project.data.img} alt={project.data.alt} width={2000} height={2000} className="w-full h-[35vh] object-cover object-center rounded" />
+        <Image src={project.data.img} alt={project.data.alt} width={1080} height={1080} className="w-full h-[35vh] object-cover object-center rounded" priority={true} />
         <div className="mt-8 flex flex-col justify-center gap-8">
           <p>{project.data.p1}</p>
           <p>{project.data.p2}</p>

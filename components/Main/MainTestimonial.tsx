@@ -13,7 +13,7 @@ export default function MainTestimonial() {
         <TestimoniMain />
       </div>
 
-      <Image src={"/images/client.ico"} width={300} quality={100} height={300} alt="client" className="mx-auto w-4/5 mt-8" />
+      <Image src={"/images/client.png"} width={300} quality={100} height={300} alt="client" className="mx-auto w-4/5 mt-8" />
     </section>
   );
 }

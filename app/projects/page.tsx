@@ -1,19 +1,16 @@
-import ProjectAbout from "@/components/Project/ProjectAbout";
-import ProjectContent from "@/components/Project/ProjectContent";
-import ProjectHeader from "@/components/Project/ProjectHeader";
-import ProjectProject from "@/components/Project/ProjectProject";
+import ProjectsPage from "@/modules/Project/components/Project";
+import { Metadata } from "next";
 import React from "react";
 
-export default function ProjectsPage() {
+export const metadata: Metadata = {
+  title: "Linder | Projects Page",
+  description: "Linder Construction Company Project Page",
+};
+
+export default function Project() {
   return (
     <>
-      <ProjectHeader />
-
-      <ProjectAbout />
-
-      <ProjectContent />
-
-      <ProjectProject />
+      <ProjectsPage />
     </>
   );
 }

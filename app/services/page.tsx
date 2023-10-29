@@ -1,8 +1,14 @@
-import Quote from "@/components/Atoms/Quote";
-import ServicesContent from "@/components/Services/ServicesContent";
-import ServicesHeader from "@/components/Services/ServicesHeader";
-import ServicesProject from "@/components/Services/ServicesProject";
+import Quote from "@/components/Elements/Quote";
+import ServicesContent from "@/components/modules/Services/ServicesContent";
+import ServicesHeader from "@/components/modules/Services/ServicesHeader";
+import ServicesProject from "@/components/modules/Services/ServicesProject";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Linder | Services Page",
+  description: "Linder Construction Company Services Page",
+};
 
 export default function ServicesPage() {
   return (

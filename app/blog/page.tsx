@@ -1,13 +1,16 @@
-import BlogBlog from "@/components/Blogs/BlogBlog";
-import BlogHeader from "@/components/Blogs/BlogHeader";
+import BlogPage from "@/modules/Blogs/components/Blog";
+import { Metadata } from "next";
 import React from "react";
 
-export default function BlogPage() {
+export const metadata: Metadata = {
+  title: "Linder | Blog Page",
+  description: "Linder Construction Company Blog Page",
+};
+
+export default function Blog() {
   return (
     <>
-      <BlogHeader />
-
-      <BlogBlog />
+      <BlogPage />
     </>
   );
 }

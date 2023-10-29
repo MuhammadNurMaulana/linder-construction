@@ -1,7 +1,13 @@
-import HeaderHome from "@/components/Home/Header";
-import HomeContent from "@/components/Home/HomeContent";
-import MainTestimonial from "@/components/Main/MainTestimonial";
+import HeaderHome from "@/components/modules/Home/Header";
+import HomeContent from "@/components/modules/Home/HomeContent";
+import MainTestimonial from "@/modules/Main/components/MainTestimonial";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Linder | Home Page",
+  description: "Linder Construction Company Home Page",
+};
 
 export default function HomePage() {
   return (

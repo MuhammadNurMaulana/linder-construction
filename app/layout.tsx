@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
+import Navbar from "@/common/navbar";
+import Footer from "@/common/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={inter.className}>
         <NextTopLoader color="#000" speed={200} crawlSpeed={200} easing="ease" />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

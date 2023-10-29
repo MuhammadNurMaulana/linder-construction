@@ -1,4 +1,3 @@
-import AboutPage from "@/modules/About/components/About";
 import { Metadata } from "next";
 import React from "react";
 
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 export default function AboutPages() {
   return (
     <>
-      <AboutPage />
+      <h2>sadasdasdas</h2>
     </>
   );
 }

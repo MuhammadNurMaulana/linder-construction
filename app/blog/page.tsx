@@ -1,4 +1,3 @@
-import BlogPage from "@/modules/Blog/components/Blog";
 import { Metadata } from "next";
 import React from "react";
 
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 export default function BlogPages() {
   return (
     <>
-      <BlogPage />
+      <h1>dsadsadasdas</h1>
     </>
   );
 }

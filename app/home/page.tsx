@@ -1,4 +1,3 @@
-import HomePage from "@/modules/Home/components/Home";
 import { Metadata } from "next";
 import React from "react";
 
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 export default function HomePages() {
   return (
     <>
-      <HomePage />
+      <h1>Hjshdsa</h1>
     </>
   );
 }

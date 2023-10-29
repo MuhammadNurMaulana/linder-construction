@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
-import Navbar from "@/modules/Navbar";
-import Footer from "@/modules/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/linder.ico" sizes="any" />
       </head>
       <body className={inter.className}>
-        <Navbar />
         <NextTopLoader color="#000" speed={200} crawlSpeed={200} easing="ease" />
         {children}
-        <Footer />
       </body>
     </html>
   );

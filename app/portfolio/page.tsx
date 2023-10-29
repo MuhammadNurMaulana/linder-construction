@@ -1,3 +1,4 @@
+import PortfolioPage from "@/components/modules/portofolio/components/Portofolio";
 import { Metadata } from "next";
 import React from "react";
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function PortfolioPages() {
   return (
     <>
-      <PortfolioPages />
+      <PortfolioPage />
     </>
   );
 }

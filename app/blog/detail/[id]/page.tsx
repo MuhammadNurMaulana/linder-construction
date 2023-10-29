@@ -1,6 +1,7 @@
 import React from "react";
 import { getData } from "@/services/blog";
-import { DetailsArrowBack, DetailsHeader } from "@/components/modules/details";
+import DetailsHeader from "@/components/modules/details/components/DetailsHeader";
+import DetailsArrowBack from "@/components/modules/details/components/DetailsArrowBack";
 import DetailsContent from "@/components/modules/details/components/DetailsContent";
 
 interface Props {

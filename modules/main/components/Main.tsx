@@ -1,4 +1,4 @@
-import MainHeader from "./Header";
+import MainHeader from "./MainHeader";
 import MainAsk from "./MainAsk";
 import MainContent from "./MainContent";
 import MainNoProject from "./MainNoProject";

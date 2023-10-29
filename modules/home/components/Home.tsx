@@ -1,4 +1,4 @@
-import MainTestimonial from "../../main/components/MainTestimonial";
+import MainTestimonial from "@/modules/Main/components/MainTestimonial";
 import HeaderHome from "./Header";
 import HomeContent from "./HomeContent";
 

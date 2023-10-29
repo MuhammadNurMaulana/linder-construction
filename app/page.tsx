@@ -1,4 +1,4 @@
-import MainPage from "@/modules/main/components/Main";
+import MainPage from "@/modules/Main/components/Main";
 
 export default function MainPages() {
   return (

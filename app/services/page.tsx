@@ -1,4 +1,4 @@
-import ServicesPage from "@/modules/services/components/Services";
+import ServicesPage from "@/modules/Services/components/Services";
 import { Metadata } from "next";
 import React from "react";
 

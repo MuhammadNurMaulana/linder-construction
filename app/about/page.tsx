@@ -1,4 +1,4 @@
-import About from "@/components/modules/about";
+import AboutPage from "@/components/modules/about/components/About";
 import { Metadata } from "next";
 import React from "react";
 
@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description: "Linder Construction Company About Page",
 };
 
-export default function AboutPage() {
+export default function AboutPages() {
   return (
     <>
-      <About />
+      <AboutPage />
     </>
   );
 }

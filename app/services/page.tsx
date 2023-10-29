@@ -1,4 +1,4 @@
-import Services from "@/components/modules/services";
+import ServicesPage from "@/components/modules/services/components/Services";
 import { Metadata } from "next";
 import React from "react";
 
@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description: "Linder Construction Company Services Page",
 };
 
-export default function ServicesPage() {
+export default function ServicesPages() {
   return (
     <>
-      <Services />
+      <ServicesPage />
     </>
   );
 }

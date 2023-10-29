@@ -1,4 +1,3 @@
-import Project from "@/components/modules/project";
 import { Metadata } from "next";
 import React from "react";
 
@@ -7,10 +6,10 @@ export const metadata: Metadata = {
   description: "Linder Construction Company Project Page",
 };
 
-export default function ProjectPage() {
+export default function ProjectPages() {
   return (
     <>
-      <Project />
+      <ProjectPages />
     </>
   );
 }

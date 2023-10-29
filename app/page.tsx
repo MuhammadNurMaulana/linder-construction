@@ -1,7 +1,9 @@
-export default function MainPages() {
+import MainComponents from "@/modules/main/Main";
+
+export default function MainPage() {
   return (
     <>
-      <h1>Main Pages</h1>
+      <MainComponents />
     </>
   );
 }

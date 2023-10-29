@@ -1,4 +1,4 @@
-import PortfolioPage from "@/components/modules/portofolio/components/Portofolio";
+import PortfolioPage from "@/modules/portofolio/components/Portofolio";
 import { Metadata } from "next";
 import React from "react";
 

@@ -1,4 +1,4 @@
-import AboutPage from "@/components/modules/about/components/About";
+import AboutPage from "@/modules/about/components/About";
 import { Metadata } from "next";
 import React from "react";
 

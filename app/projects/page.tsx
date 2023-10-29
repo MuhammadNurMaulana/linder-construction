@@ -1,4 +1,4 @@
-import ProjectsPage from "@/components/modules/project/components/Project";
+import ProjectsPage from "@/modules/project/components/Project";
 import { Metadata } from "next";
 import React from "react";
 

@@ -1,6 +1,6 @@
-import DetailsArrowBack from "@/components/modules/details/components/DetailsArrowBack";
-import DetailsContent from "@/components/modules/details/components/DetailsContent";
-import DetailsHeader from "@/components/modules/details/components/DetailsHeader";
+import DetailsArrowBack from "@/modules/details/components/DetailsArrowBack";
+import DetailsContent from "@/modules/details/components/DetailsContent";
+import DetailsHeader from "@/modules/details/components/DetailsHeader";
 import { getData } from "@/services/blog";
 import React from "react";
 

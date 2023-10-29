@@ -1,4 +1,4 @@
-import HomePage from "@/components/modules/home/components/Home";
+import HomePage from "@/modules/home/components/Home";
 import { Metadata } from "next";
 import React from "react";
 

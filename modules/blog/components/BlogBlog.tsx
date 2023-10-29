@@ -1,5 +1,4 @@
 import { getData } from "@/services/blog";
-import { DataBlog } from "@/types/type";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,7 +9,7 @@ export default async function BlogBlog() {
     <section className="bg-[#F7F7F7] my-12">
       <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogs.data.length > 0 &&
-          blogs.data.map((blog: DataBlog) => (
+          blogs.data.map((blog: { id: number; desc: string; img: string; date: string }) => (
             <div key={blog.id} className="relative pb-12 bg-white rounded">
               <Image src={blog.img} width={600} height={600} alt={blog.desc} className="w-full rounded h-[35vh] " />
 

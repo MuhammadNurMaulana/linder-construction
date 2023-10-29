@@ -1,4 +1,4 @@
-import BlogPage from "@/components/modules/blog/components/Blog";
+import BlogPage from "@/modules/blog/components/Blog";
 import { Metadata } from "next";
 import React from "react";
 

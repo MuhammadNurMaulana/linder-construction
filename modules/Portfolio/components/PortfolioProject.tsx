@@ -4,12 +4,12 @@ import Link from "next/link";
 import React from "react";
 
 export default async function PortfolioProject() {
-  const projects = await getData(`${process.env.API_KEY_URL}/api/portofolio`);
+  // const projects = await getData(`http://localhost:3000/api/portofolio`);
 
   return (
     <section className="my-12">
       <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.data.length > 0 &&
+        {/* {projects.data.length > 0 &&
           projects.data.map((project: { id: number; desc: string; img: string; alt: string }) => (
             <div key={project.id} className="pb-12 rounded">
               <Image src={project.img} width={600} height={600} alt={project.alt} className="rounded h-[35vh] w-full" />
@@ -25,7 +25,7 @@ export default async function PortfolioProject() {
                 </Link>
               </div>
             </div>
-          ))}
+          ))} */}
       </div>
     </section>
   );

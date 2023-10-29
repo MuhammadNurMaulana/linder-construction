@@ -4,10 +4,10 @@ import Link from "next/link";
 import React from "react";
 
 export default async function BlogBlog() {
-  const blogs = await getData(`${process.env.API_KEY_URL}/api/blogs`);
+  // const blogs = await getData(`http://localhost:3000/api/blogs`);
   return (
     <section className="bg-[#F7F7F7] my-12">
-      <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogs.data.length > 0 &&
           blogs.data.map((blog: { id: number; desc: string; img: string; date: string }) => (
             <div key={blog.id} className="relative pb-12 bg-white rounded">
@@ -23,7 +23,7 @@ export default async function BlogBlog() {
               </div>
             </div>
           ))}
-      </div>
+      </div> */}
     </section>
   );
 }

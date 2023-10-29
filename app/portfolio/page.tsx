@@ -1,7 +1,5 @@
-import PortfolioHeader from "@/components/modules/Portfolio/PortfolioHeader";
-import PortfolioProject from "@/components/modules/Portfolio/PortfolioProject";
+import Portofolio from "@/components/modules/portofolio";
 import { Metadata } from "next";
-
 import React from "react";
 
 export const metadata: Metadata = {
@@ -12,8 +10,7 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <>
-      <PortfolioHeader />
-      <PortfolioProject />
+      <Portofolio />
     </>
   );
 }

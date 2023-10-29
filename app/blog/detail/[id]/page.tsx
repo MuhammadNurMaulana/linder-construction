@@ -1,7 +1,7 @@
 import React from "react";
 import { getData } from "@/services/blog";
-import { DetailsArrowBack, DetailsHeader } from "@/components/modules/Details";
-import DetailsContent from "@/components/modules/Details/components/DetailsContent";
+import { DetailsArrowBack, DetailsHeader } from "@/components/modules/details";
+import DetailsContent from "@/components/modules/details/components/DetailsContent";
 
 interface Props {
   params: {

@@ -1,5 +1,5 @@
-import ProjectMain from "@/components/Elements/ProjectMain";
-import Title from "@/components/Elements/Title";
+import ProjectMain from "@/components/elements/ProjectMain";
+import Title from "@/components/elements/Title";
 import React from "react";
 
 export default function MainProject() {

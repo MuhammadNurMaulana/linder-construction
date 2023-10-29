@@ -1,7 +1,4 @@
-import Quote from "@/components/Elements/Quote";
-import ServicesContent from "@/components/modules/Services/ServicesContent";
-import ServicesHeader from "@/components/modules/Services/ServicesHeader";
-import ServicesProject from "@/components/modules/Services/ServicesProject";
+import Services from "@/components/modules/services";
 import { Metadata } from "next";
 import React from "react";
 
@@ -13,17 +10,7 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <ServicesHeader />
-
-      <Quote />
-
-      <ServicesContent title="Building Construction" />
-
-      <ServicesContent title="Repairs & Installations" />
-
-      <ServicesContent title="Custom Design Projects" />
-
-      <ServicesProject />
+      <Services />
     </>
   );
 }

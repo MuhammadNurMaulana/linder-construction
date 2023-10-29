@@ -20,6 +20,7 @@ module.exports = {
         home7: "linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.7)), url('/images/header7.webp')",
         home8: "linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.7)), url('/images/header8.webp')",
         home9: "linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.7)), url('/images/header9.webp')",
+        home10: "linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.7)), url('/images/header10.webp')",
       },
     },
   },

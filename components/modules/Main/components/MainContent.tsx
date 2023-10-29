@@ -1,4 +1,4 @@
-import BuildLeft from "@/components/Elements/BuildLeft";
+import BuildLeft from "@/components/elements/BuildLeft";
 import Image from "next/image";
 import React from "react";
 

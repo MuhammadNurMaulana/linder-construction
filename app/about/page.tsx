@@ -1,7 +1,4 @@
-import Paragraph from "@/components/Elements/Paragraph";
-import AboutContent from "@/components/modules/About/AboutContent";
-import AboutHeader from "@/components/modules/About/AboutHeader";
-import AboutQuote from "@/components/modules/About/AboutQuote";
+import About from "@/components/modules/about";
 import { Metadata } from "next";
 import React from "react";
 
@@ -13,13 +10,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <AboutHeader />
-
-      <Paragraph title="About Us" />
-
-      <AboutContent />
-
-      <AboutQuote />
+      <About />
     </>
   );
 }

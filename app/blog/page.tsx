@@ -1,4 +1,4 @@
-import BlogPage from "@/modules/Blogs/components/Blog";
+import Blog from "@/components/modules/blog";
 import { Metadata } from "next";
 import React from "react";
 
@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description: "Linder Construction Company Blog Page",
 };
 
-export default function Blog() {
+export default function BlogPage() {
   return (
     <>
-      <BlogPage />
+      <Blog />
     </>
   );
 }

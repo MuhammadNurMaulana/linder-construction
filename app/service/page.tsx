@@ -1,8 +1,4 @@
-import Paragraph from "@/components/Elements/Paragraph";
-import ServiceContent from "@/components/modules/Service/ServiceContent";
-import ServiceFaq from "@/components/modules/Service/ServiceFaq";
-import ServiceHeader from "@/components/modules/Service/ServiceHeader";
-import ServiceProjects from "@/components/modules/Service/ServiceProjects";
+import Service from "@/components/modules/service";
 import { Metadata } from "next";
 import React from "react";
 
@@ -14,15 +10,7 @@ export const metadata: Metadata = {
 export default function ServicePage() {
   return (
     <>
-      <ServiceHeader />
-
-      <Paragraph title="Service Us" />
-
-      <ServiceContent />
-
-      <ServiceProjects />
-
-      <ServiceFaq />
+      <Service />
     </>
   );
 }

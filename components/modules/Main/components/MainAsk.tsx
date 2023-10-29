@@ -1,5 +1,5 @@
-import Ask from "@/components/Elements/Ask";
-import BuildLeft from "@/components/Elements/BuildLeft";
+import Ask from "@/components/elements/Ask";
+import BuildLeft from "@/components/elements/BuildLeft";
 import React from "react";
 
 export default function MainAsk() {

@@ -1,5 +1,5 @@
-import { DetailsArrowBack, DetailsHeader } from "@/components/modules/Details";
-import DetailsContent from "@/components/modules/Details/components/DetailsContent";
+import { DetailsArrowBack, DetailsHeader } from "@/components/modules/details";
+import DetailsContent from "@/components/modules/details/components/DetailsContent";
 import { getData } from "@/services/blog";
 import React from "react";
 

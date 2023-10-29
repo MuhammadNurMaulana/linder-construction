@@ -1,5 +1,5 @@
-import NoProject from "@/components/Elements/NoProject";
-import Quote from "@/components/Elements/Quote";
+import NoProject from "@/components/elements/NoProject";
+import Quote from "@/components/elements/Quote";
 import Image from "next/image";
 import React from "react";
 

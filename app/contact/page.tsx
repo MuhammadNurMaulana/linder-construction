@@ -1,7 +1,4 @@
-import ContactCall from "@/components/modules/Contact/ContactCall";
-import ContactForm from "@/components/modules/Contact/ContactForm";
-import ContactHeader from "@/components/modules/Contact/ContactHeader";
-import ContactMaps from "@/components/modules/Contact/ContactMaps";
+import Contact from "@/components/modules/contact";
 import { Metadata } from "next";
 import React from "react";
 
@@ -13,13 +10,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <ContactHeader />
-
-      <ContactCall />
-
-      <ContactForm />
-
-      <ContactMaps />
+      <Contact />
     </>
   );
 }

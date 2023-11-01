@@ -5,12 +5,12 @@ import { getData } from "@/common/service";
 import React from "react";
 
 export default async function page({ params }: any) {
-  const blog = await getData(`${process.env.API_KEY_URL}/api/blogs/?id=${params.id}`);
-  const blogs = blog.data;
+  const project = await getData(`${process.env.API_KEY_URL}/api/portofolio/?id=${params.id}`);
+  const projects = project.data;
   return (
     <DetailHeader>
-      <DetailArrowBack href="/blog" title="Back To Blog" />
-      <DetailContent src={blogs.img} alt={blogs.desc} title={blogs.desc} blog1={blogs.p1} blog2={blogs.p2} blog3={blogs.p3} blog4={blogs.p4} date={blogs.date} />
+      <DetailArrowBack href="/portfolio" title="Back To Portfolio" />
+      <DetailContent src={projects.img} alt={projects.title} title={projects.title} blog1={projects.p1} blog2={projects.p2} blog3={projects.p3} blog4={projects.p4} date={projects.desc} />
     </DetailHeader>
   );
 }

@@ -1,6 +1,8 @@
 import PageProject from "@/common/elements/PageProject";
 import TitlePage from "@/common/elements/TitlePage";
 import { getData } from "@/common/service";
+import { ProjectMain } from "@/common/types/type";
+import Link from "next/link";
 import React from "react";
 
 export default async function Project() {
@@ -15,9 +17,9 @@ export default async function Project() {
         <div className="w-4/5 mx-auto mt-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.length > 0 &&
-              projects.map((project: any) => (
+              projects.map((project: ProjectMain) => (
                 <div key={project.id}>
-                  <PageProject href={`/main/${project.id}`} src={project.img} alt={`image of project ${project.id}`} title={project.title} btnName="VIEW PROJECT" />
+                  <PageProject href={`/allprojects/details/${project.id}`} src={project.img} alt={`image of project ${project.id}`} title={project.title} btnName="VIEW PROJECT" />
                 </div>
               ))}
           </div>
@@ -25,7 +27,9 @@ export default async function Project() {
       </div>
 
       <div className="text-center">
-        <button className="py-2 px-8 border border-slate-800 rounded">VIEW ALL</button>
+        <Link href={"/allprojects"} className="py-2 px-8 border border-slate-800 rounded">
+          VIEW ALL
+        </Link>
       </div>
     </section>
   );

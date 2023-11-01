@@ -1,3 +1,4 @@
+import ProjectComponents from "@/modules/project/Project";
 import { Metadata } from "next";
 import React from "react";
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function ProjectPages() {
   return (
     <>
-      <h2>Heello</h2>
+      <ProjectComponents />
     </>
   );
 }

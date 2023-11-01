@@ -1,7 +1,7 @@
 import PageProject from "@/common/elements/PageProject";
 import TitlePage from "@/common/elements/TitlePage";
+import ViewAll from "@/common/elements/ViewAll";
 import { getData } from "@/common/service";
-import Link from "next/link";
 import React from "react";
 
 export default async function ProjectsServices() {
@@ -17,18 +17,14 @@ export default async function ProjectsServices() {
             {projects.length > 0 &&
               projects.map((project: any) => (
                 <div key={project.id}>
-                  <PageProject href={`/allprojects/details/${project.id}`} src={project.img} alt={`image of project ${project.id}`} title={project.title} btnName="VIEW PROJECT" />
+                  <PageProject href={`/allprojects/details/${project.id}`} src={project.img} alt={`image of project ${project.id}`} title={project.title} btnName="LEARN MORE" />
                 </div>
               ))}
           </div>
         </div>
       </div>
 
-      <div className="text-center">
-        <Link href={"/allprojects"} className="py-2 px-8 border border-slate-800 rounded">
-          VIEW ALL
-        </Link>
-      </div>
+      <ViewAll />
     </section>
   );
 }

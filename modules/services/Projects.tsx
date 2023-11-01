@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 export default async function ProjectsServices() {
-  const project = await getData(`${process.env.API_KEY_URL}/api/service`);
+  const project = await getData(`${process.env.API_KEY_URL}/api/services`);
   const projects = project.data;
   return (
     <section className="py-12">

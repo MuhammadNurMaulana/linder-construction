@@ -1,9 +1,9 @@
-import MainComponents from "@/modules/main/Main";
+import Main from "@/modules/main";
 
 export default function MainPage() {
   return (
     <>
-      <MainComponents />
+      <Main />
     </>
   );
 }

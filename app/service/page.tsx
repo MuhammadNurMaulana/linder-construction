@@ -1,3 +1,4 @@
+import ServiceComponents from "@/modules/service/Service";
 import { Metadata } from "next";
 import React from "react";
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function ServicePages() {
   return (
     <>
-      <h1>Hello</h1>
+      <ServiceComponents />
     </>
   );
 }

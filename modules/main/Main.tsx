@@ -3,6 +3,8 @@ import Header from "./Header";
 import NoProject from "./NoProject";
 import Project from "./Project";
 import Content from "./Content";
+import Asks from "./Asks";
+import Testimonial from "./Testimonial";
 
 export default function MainComponents() {
   return (
@@ -11,6 +13,8 @@ export default function MainComponents() {
       <NoProject />
       <Project />
       <Content />
+      <Asks />
+      <Testimonial />
     </>
   );
 }

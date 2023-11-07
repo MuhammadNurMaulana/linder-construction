@@ -7,7 +7,7 @@
 ## Preview
 Checkout this amazing website [here!](https://https://linder-construction.vercel.app/)
 
-<img width="1440" alt="linder-demo" src="/linder.png">
+<img width="1440" alt="linder-demo" src="https://github.com/MuhammadNurMaulana/linder-construction/blob/master/public/linder.png">
 
 ## Getting Started
 

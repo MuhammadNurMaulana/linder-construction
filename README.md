@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Linder - Linder Construction Company 🚀
+
+### [Linder Demo](https://linder-construction.vercel.app/)
+
+**Linder Company Construction**, a construction company with more than 100 projects and beautiful designs. This website was built using NextJs framework and TailwindCSS.
+
+## Preview
+Checkout this amazing website [here!](https://https://linder-construction.vercel.app/)
+
+<img width="1440" alt="linder-demo" src="/linder.png">
 
 ## Getting Started
 
@@ -10,8 +19,6 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

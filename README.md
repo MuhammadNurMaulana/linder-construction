@@ -5,7 +5,7 @@
 **Linder Company Construction**, a construction company with more than 100 projects and beautiful designs. This website was built using NextJs framework and TailwindCSS.
 
 ## Preview
-Checkout this amazing website [here!](https://https://linder-construction.vercel.app/)
+Checkout this amazing website [here!](https://linder-construction.vercel.app/)
 
 <img width="1440" alt="linder-demo" src="https://github.com/MuhammadNurMaulana/linder-construction/blob/master/public/linder.png">
 

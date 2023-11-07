@@ -7,8 +7,6 @@ import Footer from "@/common/module/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const disableNavbar = "not-found";
-
 export const metadata: Metadata = {
   title: "Linder Construction Company",
   description: "Linder Construction Company Main Page",
@@ -23,9 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={inter.className}>
         <NextTopLoader color="#000" speed={200} crawlSpeed={200} easing="ease" />
-        {!disableNavbar && <Navbar />}
+        <Navbar />
         {children}
-        {!disableNavbar && <Footer />}
+        <Footer />
       </body>
     </html>
   );
